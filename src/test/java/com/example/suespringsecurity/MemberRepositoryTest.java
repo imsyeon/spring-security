@@ -4,14 +4,17 @@ import com.example.suespringsecurity.entity.Member;
 import com.example.suespringsecurity.repository.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Optional;
 
 @SpringBootTest
 @Slf4j
+@ExtendWith(SpringExtension.class)
 public class MemberRepositoryTest {
 
     @Autowired
